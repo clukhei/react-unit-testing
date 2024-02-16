@@ -31,4 +31,9 @@ describe("App", () => {
     const linkElement = await screen.findByText(/Kaliteye hoşgeldiniz/i);
     expect(linkElement).toBeInTheDocument();
   });
+  it("renders masthead component", async () => {
+    render(<App />);
+    const masthead = await screen.findByRole('masthead');
+    expect(masthead).toBeInTheDocument();
+  });
 });

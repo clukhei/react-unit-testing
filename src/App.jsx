@@ -14,6 +14,7 @@ function App() {
 
   return (
     <>
+    <sgds-masthead role="masthead"></sgds-masthead>
       {todos.map((todo) => (
         <div key={todo.id}>
           <h1>{todo.title}</h1>
